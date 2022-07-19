@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+logging:
+  pattern:
+    console: "%d{dd-MM-yyyy HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Bootcamp-Ms-Julio-2022/config-data.git
+#          searchPaths:
+#          username: ${GIT_USER}
+#          password: ${GIT_PASSWORD}
+          default-label: master
+  security:
+    user:
+      name: bootcamp
+      password: b00tc4mp
+
