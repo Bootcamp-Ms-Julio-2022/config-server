@@ -11,9 +11,9 @@ spring:
       server:
         git:
           uri: https://github.com/Bootcamp-Ms-Julio-2022/config-data.git
-#          searchPaths:
-#          username: ${GIT_USER}
-#          password: ${GIT_PASSWORD}
+          searchPaths:
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
           default-label: master
   security:
     user:
